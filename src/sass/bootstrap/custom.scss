@@ -1,4 +1,7 @@
 // Override default variables before the import
-// add BS overrides here
+$headings-font-family: $heading-font;
+$font-family-base: $body-font;
+$navbar-default-bg: $dark;
+
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';

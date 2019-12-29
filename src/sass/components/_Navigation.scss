@@ -1,0 +1,46 @@
+.navbar {
+  box-shadow: 0 5px 10px #333;
+  padding: 0.6rem 0;
+
+  a {
+    transition: color 0.25s;
+  }
+
+  .navbar-brand {
+    font-family: $heading-font;
+    font-size: 1.3rem;
+
+    &:hover {
+      color: $pink;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+      color: $navbar-links;
+      position: relative;
+      margin: 0 0.5rem;
+
+      &::after {
+        content: '';
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        background: $pink;
+        transition: 0.4s;
+      }
+
+      &:hover {
+        color: $pink;
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
