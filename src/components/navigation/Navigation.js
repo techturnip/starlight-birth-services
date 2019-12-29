@@ -6,7 +6,7 @@ import { FaHome } from 'react-icons/fa'
 
 export default function Navigation() {
   return (
-    <Navbar fixed="top" bg="dark" variant="dark" expand="lg">
+    <Navbar fixed="top" variant="dark" expand="lg">
       <Container>
         <Navbar.Brand href="#home">Starlight Birth Services</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
