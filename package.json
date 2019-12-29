@@ -53,9 +53,13 @@
     "prettier": "^1.19.1"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+    "src/**/*.{js,jsx,ts,tsx,json}": [
       "prettier --single-quote --write",
       "eslint . --fix",
+      "git add"
+    ],
+    "src/**/*.{scss, css, md}": [
+      "prettier --single-quote --write",
       "git add"
     ]
   },
