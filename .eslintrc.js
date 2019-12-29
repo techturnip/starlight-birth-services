@@ -1,21 +1,27 @@
 module.exports = {
   env: {
     browser: true,
-    es6: true,
+    es6: true
   },
-  extends: ['plugin:react/recommended', 'airbnb', 'prettier', 'prettier/react'],
+  extends: [
+    'airbnb',
+    'plugin:react/recommended',
+    'plugin:jsx-a11y/strict',
+    'plugin:prettier/recommended',
+    'prettier/react'
+  ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
-    __DEV__: true,
+    __DEV__: true
   },
   parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: 2018,
-    sourceType: 'module',
+    sourceType: 'module'
   },
   plugins: ['react', 'prettier', 'jsx-a11y', 'import', 'react-hooks'],
   rules: {
@@ -29,13 +35,13 @@ module.exports = {
     'no-undersocre-dangle': 'off',
     'no-console': ['error', { allow: ['tron'] }],
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/exhaustive-deps': 'warn'
   },
   settings: {
     'import/resolver': {
       alias: {
-        map: [['@', './src']],
-      },
-    },
-  },
-};
+        map: [['@', './src']]
+      }
+    }
+  }
+}
